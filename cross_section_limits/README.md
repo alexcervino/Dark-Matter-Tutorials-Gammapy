@@ -21,7 +21,7 @@ Run the script via the command line using the following arguments:
 
 ```bash
 python limits_annihilation.py -s RetII DraI -c tau -p Einasto -t 100 -o tau_limits.csv
-
+```
 ## ⚙️ Command-Line Arguments
 
 The script is executed via the command line and offers the following parameters to customize your analysis:
