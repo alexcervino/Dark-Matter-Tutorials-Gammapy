@@ -17,7 +17,8 @@ This notebook provides the foundational methods for theoretical Dark Matter mode
 This notebook focuses on the observational side, demonstrating how to translate a theoretical physical model into realistic mock data. It introduces the use of Instrument Response Functions (IRFs) to simulate how a gamma-ray telescope actually observes the source, allowing you to generate synthetic datasets and apply statistical tools to evaluate signal detectability.
 
 ### 📓 Folder: cross_section_limits
-In this folder you cna find the instructions to compute the annihilation or decay limits or your DM case.
+In this folder you can find the instructions to compute the annihilation or decay limits or your DM case.
+
 ---
 
 ## ⚙️ Installation and Setup
