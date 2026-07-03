@@ -2,7 +2,7 @@
 
 Welcome to this repository of tutorials dedicated to modeling and simulating Dark Matter (DM) scenarios. 
 
-This project provides a step-by-step workflow to understand the physical signatures of Weakly Interacting Massive Particles (WIMPs) and how to simulate their observation using the [Gammapy](https://gammapy.org/) framework and **CTA (Cherenkov Telescope Array)** Instrument Response Functions (IRFs).
+This project provides a step-by-step workflow to understand the physical signatures of Weakly Interacting Massive Particles (WIMPs) and how to simulate their observation using the [Gammapy](https://gammapy.org/) framework.
 
 ---
 
@@ -10,26 +10,21 @@ This project provides a step-by-step workflow to understand the physical signatu
 
 This repository is structured as a series of educational notebooks, taking you from theoretical spatial/spectral modeling to full observational simulations.
 
-### 📓 Notebook 1: Basic Modeling of Dark Matter [tutorial_basics.ipynb] 
-This notebook provides the foundational methods for theoretical Dark Matter modeling. It introduces the basic concepts of defining the spatial distribution and spectral signatures of a dark matter source, guiding you through the necessary steps to compute the expected, pristine gamma-ray flux arriving at Earth independent of any specific telescope.
+### 📓 Notebook 1: Dark Matter Indirect Detection with Gammapy: Basics [tutorial_basics.ipynb] 
+This notebook provides the foundational methods for theoretical Dark Matter modeling. It introduces the basic concepts of defining the spatial distribution and spectral signatures of a dark matter source, guiding you through the necessary steps to compute the expected gamma-ray flux .
 
-### 📓 Notebook 2: Observational Simulation with Gammapy  [tutorial_observation_simulation.ipynb]
-This notebook focuses on the observational side, demonstrating how to translate a theoretical physical model into realistic mock data. It introduces the use of Instrument Response Functions (IRFs) to simulate how a gamma-ray telescope actually observes the source, allowing you to generate synthetic datasets and apply statistical tools to evaluate signal detectability.
+### 📓 Notebook 2: Dark Matter Data Handling with Gammapy  [tutorial_observation_simulation.ipynb]
+This notebook focuses on the observational side of a dark matter analysis: translating a theoretical model into realistic data. It introduces Instrument Response Functions (IRFs) and shows how to use them to generate synthetic observations, as well as how to build equivalent datasets from real observations, comparing both cases. It also introduces the 1D vs. 3D analysis approaches used in the next notebook and the Asimov and Monte carlo simulation scenarios.
 
-### 📓 Folder: cross_section_limits
-In this folder you can find the instructions to compute the annihilation or decay limits or your DM case.
+
+### 📓 Notebook 3: Dark Matter indirect search analysis with Gammapy  [tutorial_complete_analysis.ipynb]
+This notebook covers a full dark matter indirect detection analysis pipeline, using simulated observations. It includes testing for signal detection, deriving upper limits or confidence intervals depending on the outcome, scanning over mass to build an exclusion curve, and computing the expected sensitivity bands (1σ/2σ) — the "Brazilian plot" — for both the annihilation and decay scenarios.
 
 ---
 
 ## ⚙️ Installation and Setup
 
-### Prerequisites
-To run these notebooks, you will need a standard scientific Python environment with the following core libraries:
-* `gammapy`
-* `astropy`
-* `scipy`
-* `numpy`
-* `matplotlib`
+To run these notebooks, you will need Gammapy v2.1
 
 ### Environmental Variables
 The theoretical spectra generation relies on the PPPC4DMID or Cosmixs tables. You must download the Gammapy datasets and set the following environment variable on your machine pointing to that folder so Gammapy can find the `AtProduction_gammas.dat` file:
