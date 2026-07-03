@@ -360,7 +360,7 @@ plt.show()
 # > **Note on default values:** For `DarkMatterAnnihilationSpectralModel` nor `DarkMatterDecaySpectralModel` Gammapy falls back to conventional benchmark values: $\langle\sigma v\rangle = 3\times10^{-26}\,\mathrm{cm^3\,s^{-1}}$ (the thermal relic cross-section) for annihilation, and $\tau_\chi = 4.3\times10^{17}s $ (age of the Universe) for decay. These are **not** fitted or measured values for Draco — they are illustrative defaults. If you want to fit this parameter, please check the tutorial 'Dark Matter indirect search analysis with Gammapy'.
 # 
 
-# In[40]:
+# In[ ]:
 
 
 # Common parameters
@@ -371,9 +371,9 @@ mass_DM  = 10 * u.TeV  # DM mass
 E_min    = 0.1 * u.TeV 
 E_max    = mass_DM
 
-# ------------------------------------------------------------------
+
 # Annihilation flux  (uses J-factor, DarkMatterAnnihilationSpectralModel)
-# ------------------------------------------------------------------
+
 ann_model = DarkMatterAnnihilationSpectralModel(
     mass=mass_DM, 
     channel=channel,
@@ -384,10 +384,10 @@ int_flux_ann = (
     jfact_draco * ann_model.integral(energy_min=E_min, energy_max=E_max)
 ).to("cm-2 s-1")
 
-# ------------------------------------------------------------------
+
 # Decay flux (uses D-factor, DarkMatterDecaySpectralModel)
 # For the D-factor we recompute JFactory with annihilation=False
-# ------------------------------------------------------------------
+
 jfactory_dec = JFactory(
     geom=geom_draco,
     profile=draco_profile,
@@ -405,9 +405,9 @@ int_flux_dec = (
     dfact_draco * dec_model.integral(energy_min=E_min, energy_max=E_max)
 ).to("cm-2 s-1")
 
-# ------------------------------------------------------------------
+
 # Plot side by side
-# ------------------------------------------------------------------
+
 fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 
 # --- Annihilation ---
@@ -455,5 +455,5 @@ plt.show()
 # - Arina, C. et al. 2023, *JCAP*, 05, 024 — CosmiXs: Cosmic messenger spectra for indirect dark matter searches. [arXiv:2213.01153](https://arxiv.org/abs/2312.01153)
 # - Bergström, L., Ullio, P., & Buckley, J.H. 1998, Astroparticle Physics, 9, 137–162. - Observability of gamma rays from dark matter neutralino annihilations in the Milky Way halo. [astro-ph/9712318](https://arxiv.org/abs/astro-ph/9712318)
 # - Bonnivard, V. et al. 2015,*MNRAS*, 453, 849 — Dark matter annihilation and decay in dwarf spheroidal galaxies: The classical and ultrafaint dSphs. [arXiv:1504.02048](https://arxiv.org/abs/1504.02048)
-# - Cirelli, M. et al. 2011, *JCAP*, 03, 051 — PPPC 4 DM ID: A Poor Particle Physicist Cookbook for Dark Matter Indirect Detection. [arXiv:1012.0545](https://arxiv.org/abs/1012.4515)
+# - Cirelli, M. et al. 2011, *JCAP*, 03, 051 — PPPC 4 DM ID: A Poor Particle Physicist Cookbook for Dark Matter Indirect Detection. [arXiv:1012.4515](https://arxiv.org/abs/1012.4515)
 # 
