@@ -10,15 +10,15 @@ This project provides a step-by-step workflow to understand the physical signatu
 
 This repository is structured as a series of educational notebooks, taking you from theoretical spatial/spectral modeling to full observational simulations.
 
-### 📓 Notebook 1: Dark Matter Indirect Detection with Gammapy: Basics [dark_matter_tutorial_basics.ipynb] 
+### 📓 Notebook 1: Dark Matter Indirect Detection with Gammapy: Basics [Basics.ipynb] 
 This notebook provides the foundational methods for theoretical Dark Matter modeling. It introduces the basic concepts of defining the spatial distribution and spectral signatures of a dark matter source, guiding you through the necessary steps to compute the expected gamma-ray flux .
 
-### 📓 Notebook 2: Dark Matter Data Handling with Gammapy  [dark_matter_tutorial_observation_simulation.ipynb]
+### 📓 Notebook 2: Dark Matter Data Handling with Gammapy  [Observation_Simulation.ipynb]
 This notebook focuses on the observational side of a dark matter analysis: translating a theoretical model into realistic data. It introduces Instrument Response Functions (IRFs) and shows how to use them to generate synthetic observations, as well as how to build equivalent datasets from real observations, comparing both cases. It also introduces the 1D vs. 3D analysis approaches used in the next notebook and the Asimov and Monte carlo simulation scenarios.
 
 
-### 📓 Notebook 3: Dark Matter indirect search analysis with Gammapy  [dark_matter_tutorial_complete_analysis.ipynb] & [dark_matter_tutorial_complete_analysis_simulation.ipynb]
-This notebook covers a full dark matter indirect detection analysis pipeline, using simulated observations. It includes testing for signal detection, deriving upper limits or confidence intervals depending on the outcome, scanning over mass to build an exclusion curve, and computing the expected sensitivity bands (1σ/2σ) — the "Brazilian plot" — for both the annihilation and decay scenarios. In this case you can find 2 notebooks: one for doing the analysis with simulations and another with real data.
+### 📓 Notebook 3: Dark Matter indirect search analysis with Gammapy
+This notebook covers a full dark matter indirect detection analysis pipeline, using simulated observations. It includes testing for signal detection, deriving upper limits or confidence intervals depending on the outcome, scanning over mass to build an exclusion curve, and computing the expected sensitivity bands (1σ/2σ) — the "Brazilian plot" — for both the annihilation and decay scenarios. In this case you can find 3 notebooks: one for doing the analysis with simulations ([Complete_Analysis-Simulations.ipynb] and a less detailed version you can find deployed in Gammapy [Complete_Analysis-GammapyVersion.ipynb]) and another with real data [Complete_Analysis-RealData.ipynb].
 
 ---
 
