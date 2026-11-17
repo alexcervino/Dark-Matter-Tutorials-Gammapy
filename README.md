@@ -18,7 +18,7 @@ This notebook focuses on the observational side of a dark matter analysis: trans
 
 
 ### 📓 Notebook 3: Dark Matter indirect search analysis with Gammapy
-This notebook covers a full dark matter indirect detection analysis pipeline, using simulated observations. It includes testing for signal detection, deriving upper limits or confidence intervals depending on the outcome, scanning over mass to build an exclusion curve, and computing the expected sensitivity bands (1σ/2σ) — the "Brazilian plot" — for both the annihilation and decay scenarios. In this case you can find 3 notebooks: one for doing the analysis with simulations ([Complete_Analysis-Simulations.ipynb] and a less detailed version you can find deployed in Gammapy [Complete_Analysis-GammapyVersion.ipynb]) and another with real data [Complete_Analysis-RealData.ipynb].
+This notebook covers a full dark matter indirect detection analysis pipeline, using simulated observations. It includes testing for signal detection, deriving upper limits or confidence intervals depending on the outcome, scanning over mass to build an exclusion curve, and computing the expected sensitivity bands (1σ/2σ) — the "Brazilian plot" — for both the annihilation and decay scenarios. In this case you can find 3 notebooks: one for doing the analysis with simulations ([Complete_Analysis-Simulations.ipynb]) and another with real data ([Complete_Analysis-RealData.ipynb]).
 
 ---
 
